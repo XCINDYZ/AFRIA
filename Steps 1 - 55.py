@@ -43,7 +43,7 @@ if problematic_behaviour == "":
 problematic_behaviour_list = problematic_behaviour.split(", ")
 
 # ask if user wants to specify a harm in the vignette
-specify_harm = input("Do you want to specify harms in the vignette? If not, press 'n'. If yes, please enter the specified harms seperated by a comma: (n/'specify a harm')")
+specify_harm = input("Do you want to specify harms in the vignette? If not, press 'n'. If yes, please enter the specified harms separated by a comma: (n/'specify a harm')")
 if specify_harm == "n":
    print("[default] No specified harm")
    specified_harms_list = ["nothing to see here"]
