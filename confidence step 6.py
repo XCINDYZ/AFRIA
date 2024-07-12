@@ -12,7 +12,8 @@ with open("likelihood_6840210293790598120.json", 'r') as f:
 
 conf_likelihoods = {}
 
-# assess per content key in the harms file, the severity of the harm
+# assess per content key in the harms file, the confidence of the generation.
+# Substitute likelihood for severity to calculate the severity
 for stakeholder in likelihoods.keys():
   if stakeholder not in conf_likelihoods:
     conf_likelihoods[stakeholder] = {}
@@ -22,7 +23,7 @@ for stakeholder in likelihoods.keys():
       model = "gpt-3.5-turbo", 
       messages =[
       {"role": "assistant", 
-      "content": f"How confident are you about the assessment of likelihood for the harm: {likelihood}"}
+      "content": f"How confident are you about the assessment of the likelihood for the harm: {likelihood}"}
     ],
       max_tokens = 50
     )
