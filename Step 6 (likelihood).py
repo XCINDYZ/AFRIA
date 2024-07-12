@@ -6,8 +6,8 @@ import json
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# open the file harms_6840210293790598120.json
-with open("severities_6840210293790598120.json", 'r') as f:
+# open the file harms_6840210293790598120.json to get steps 1-3)
+with open("severities_6840210293790598120.json", 'r') as f: # substitute for your own file name
     severities = json.load(f)
 
 with open("harms_6840210293790598120.json", 'r') as f:
