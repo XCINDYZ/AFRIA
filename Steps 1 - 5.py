@@ -175,13 +175,14 @@ for stakeholder in generated_stakeholders_list:
             model = "gpt-3.5-turbo", 
             messages =[
             {"role": "assistant", 
-            "content": f"Make a list of the human rights (enshrined in the universal decleration of human rights) mentioned, seperated by a semi-colon: {HR}"}
+            "content": f"Make a list of the human rights (enshrined in the universal declaration of human rights) mentioned, separated by a semi-colon: {HR}"}
           ],
             max_tokens = 100
         )
 
         HR_lists[stakeholder][behaviour] = HR_list.choices[0].message.content
 
+        # # Uncomment the mitigation measures if you want to generate mitigations
         # harm => mitigation
         # mitigation = openai.chat.completions.create(
         #     model = "gpt-3.5-turbo",
@@ -193,7 +194,7 @@ for stakeholder in generated_stakeholders_list:
         # )
         # mitigations[stakeholder][behaviour] = mitigation.choices[0].message.content
       
-# save vignettes and harms to json files
+# save vignettes and harms to JSON files
 vignette_jsonfile = "vignettes_"+jsonfilename
 harms_jsonfile = "harms_"+jsonfilename
 HRs_jsonfile = "HRs_"+jsonfilename
