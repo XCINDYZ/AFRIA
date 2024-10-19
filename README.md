@@ -28,4 +28,5 @@ AFRIA generates potential mitigation measures of the harms in the harm matrix. A
 ### 6) Generating severity and likelihood of harms
 AFRIA generates the severity of the harms in the harm matrix. AFRIA puts these generations in a "severity matrix". AFRIA also generates the likelihood of the harms in the harm matrix. AFRIA puts these generations in a "likelihood matrix". 
 
-
+### Extra step: confidence levels
+We also experimented with generating the confidence levels of the severity and likelihood using chat completion.
