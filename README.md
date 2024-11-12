@@ -32,10 +32,11 @@ AFRIA generates the severity of the harms in the harm matrix. AFRIA puts these g
 We also experimented with generating the confidence levels of the severity and likelihood using chat completion. This step is not included in our paper due to space limitations.
 
 # Our Results
-We generated 2189 harm matrix cells across all five scenarios, which eventually resulted in 4580 harms spread over the categories.
+We generated 2189 harm matrix cells across all five scenarios, which eventually resulted in 4580 harms spread over the categories. 
 
 ## RQ1: Can AFRIA generate meaningful examples of harms
 Of the 2189 matrix cells, 90.9% were generated from meaningful vignettes. Of all the cells generated from meaningful vignettes, 93.7% contained meaningful harms. Of the 6.3% non-meaningful harms, 95.1% were nonsensical. In comparison, AHA! found 93% meaningful harms (elicited aggregating crowds and GPT-3 outputs). Of the 7% non-meaningful harms, 86.4% were nonsensical. Thus, AFRIA’s percentage of meaningful harms is comparable (0.7% higher) to AHA!. The proportion of nonsensical harms is also similar.
 
 ## RQ2: Do the categories of harms differ significantly depending on the scenario?
-
+Heat map of the distribution of harms across categories:
+![alt text](https://github.com/XCINDYZ/AFRIA/blob/main/Schermopname%(162).png)
