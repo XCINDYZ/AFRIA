@@ -40,3 +40,7 @@ Of the 2189 matrix cells, 90.9% were generated from meaningful vignettes. Of all
 ## RQ2: Do the categories of harms differ significantly depending on the scenario?
 Heat map of the distribution of harms across categories:
 ![alt text](https://github.com/XCINDYZ/AFRIA/blob/main/Schermopname%20(162).png)
+
+## RQ4
+Heat map of the distribution of FR impacts across categories:
+![alt text](https://github.com/XCINDYZ/AFRIA/blob/main/Schermopname%20(218).png)
